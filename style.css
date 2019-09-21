@@ -53,3 +53,33 @@ body{
     float: right;
     text-align: right;
 }
+.nav__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.nav{
+    font-size: 1.1875rem;
+}
+
+.link{
+    color: #000;
+    text-decoration: underline;
+
+}
+.nav__link{
+    text-decoration: none;
+    padding: 1.32rem;
+    display: block;
+  
+}
+.link:hover{
+    color: #f44336;
+}
+
