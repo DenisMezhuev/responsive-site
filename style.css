@@ -9,7 +9,7 @@
 }
 .clearfix::after,
 .header::after,
-.grid::after{
+.grid::after {
     content: "";
     display: table;
     clear: both;
@@ -18,7 +18,7 @@ html{
     font-size: 100%;
 }
 body{
-    font-family: "Robot", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: #000;
     font-size: 1rem;
@@ -26,8 +26,9 @@ body{
     margin: 0;
 }
 .page__cell{
-    max-width: 1180px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .header{
     border-bottom: 1px solid #ccc;
@@ -49,6 +50,9 @@ body{
 }
 .header__logo{
     float: left;
+}
+.logo__picture {
+	max-width: 100%;
 }
 .header__contact{
     float: right;
@@ -127,17 +131,18 @@ body{
     width: 49.15%;
     position: relative;
 }
-.grid__item:nth-of-type(2n){
-    margin-right: 0;
-}
+
 .grid__overlay{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+   
     background: rgba(0, 0, 0, 0.5);
     transition: 0.5s;
+    -webkit-transition: .5s;
+	-moz-transition: .5s;
 }
 .grid__overlay:hover{
     background: rgba(0, 0, 0, 0.7);
@@ -173,12 +178,13 @@ body{
 
 }
 .advantage{
-    display: flex;
+    
     display: -webkit-box;
     display: -ms-flexbox;
-    flex-direction: row;
+    display: flex;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
+    flex-direction: row;
 }
 .advantage__item{
     width: 28%;
@@ -187,13 +193,33 @@ body{
 
 
 }
-.advantage__item:nth-of-type(3n){
-    margin-right: 0;
+.grid__item:nth-of-type(2n),
+.advantage__item:last-child {
+	margin-right: 0;
 }
 .advantage__headline{
     font-size: 1.25rem;
     margin: 0 0 0.8rem;
 }
-.advantage__icone {
+.advantage__icon {
     margin-bottom: 1.2rem;
+}
+.page__row--footer{
+    background: #595959;
+    color: #fff;
+    margin-top: 4.375rem;
+}
+.footer__copyright{
+    text-align: right;
+}
+.footer__link{
+    color: #fff;
+    text-decoration: none;
+}
+.footer__link:hover{
+   
+    text-decoration: underline;
+}
+.footer{
+    padding: 1.2rem 0;
 }
